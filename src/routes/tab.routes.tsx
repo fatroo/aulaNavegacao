@@ -7,7 +7,8 @@ const {Screen,Navigator} = createBottomTabNavigator();
 export default function TabRoutes(){
     return(
         <Navigator screenOptions={{
-            headerStyle:{backgroundColor: 'green'}
+            headerStyle:{backgroundColor: 'green'},
+            tabBarStyle:{backgroundColor: 'red'},
         }}>
             <Screen
                 name = 'Home'
@@ -15,7 +16,8 @@ export default function TabRoutes(){
                 options={{
                     //headerShown : false
                     title: 'Tela de inicial',
-                    headerTitleAlign: 'center'
+                    headerTitleAlign: 'center',
+                    headerStyle:{backgroundColor: 'red'},
                 }}
             />
                 
